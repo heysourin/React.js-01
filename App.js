@@ -14,7 +14,7 @@ function App() {
   return (
     <div className="App">
       <h1>Form Bharo</h1>
-      <form onSubmit={getFormData}> //have to create a function named getFormData
+      <form onSubmit={getFormData}> {/*have to create a function named getFormData*/}
         <input
           type="text"
           placeholder="Name"
