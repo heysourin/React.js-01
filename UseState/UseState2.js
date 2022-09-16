@@ -17,3 +17,30 @@ const UseState2 = () => {
 };
 
 export default UseState2;
+// _____________________________________________________________________________________________________________________________________
+//Another way of doing this
+import "./styles.css";
+import { useState } from "react";
+
+export default function App() {
+  return (
+    <div className="App">
+      <StateWithInput />
+    </div>
+  );
+}
+
+function StateWithInput() {
+  const [myName, setMyName] = useState("");
+
+  function handleOnChange(text) {
+    setMyName(text);
+  }
+
+  return (
+    <div>
+      <input type="text" onChange={(e) => handleOnChange(e.target.value)} />
+      <p>Hello, {myName}!</p>
+    </div>
+  );
+}
