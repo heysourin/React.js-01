@@ -4,7 +4,7 @@ const UseState2 = () => {
   const [inputValue, setInputValue] = useState("Newbie");
 
   const changes = (e) => {
-    const newValue = e.target.value;
+    const newValue = (e.target.value);
     setInputValue(newValue);
   };
 
